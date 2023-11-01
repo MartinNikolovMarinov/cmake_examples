@@ -1,0 +1,3 @@
+[submodule "03_dependency_management/03_03_using_git_submodules/external_modules/glfw"]
+	path = 03_dependency_management/03_03_using_git_submodules/external_modules/glfw
+	url = https://github.com/glfw/glfw.git

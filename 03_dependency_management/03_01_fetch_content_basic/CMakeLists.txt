@@ -20,3 +20,4 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 target_link_libraries(${CMAKE_PROJECT_NAME} gtest_main)
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${google_test_include_dirs})
