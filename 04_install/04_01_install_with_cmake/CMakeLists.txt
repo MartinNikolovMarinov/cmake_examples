@@ -16,3 +16,8 @@ target_include_directories(${PROJECT_NAME}
 
 install(TARGETS ${PROJECT_NAME} DESTINATION $ENV{HOME}/bin)
 install(FILES "${PROJECT_BINARY_DIR}/example_config.h" DESTINATION $ENV{HOME}/bin)
+
+add_custom_target(uninstall
+    COMMAND ${CMAKE_COMMAND} -E remove -f "$ENV{HOME}/bin/${PROJECT_NAME}"
+    COMMAND ${CMAKE_COMMAND} -E remove -f "$ENV{HOME}/bin/example_config.h"
+)

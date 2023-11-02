@@ -1,0 +1,1 @@
+This is a self contained and cross-platform example for installing software with cmake and cpack. This example should serve as a starting point for creating a cross-platform installer with user friendly gui for your software.
